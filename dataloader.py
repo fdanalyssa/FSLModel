@@ -44,8 +44,10 @@ def dataset_setup():
                                                     transform = val_transform)
     return train_dataset, val_dataset
 
+    
 
-def dataloader(bata_size=64):
+def dataloader(batch_size=64):
+
 
     train_dataset, val_dataset = dataset_setup()
 
