@@ -79,7 +79,7 @@ optimizer = torch.optim.RMSprop(model.parameters(), lr=0.001)
 # Start training with help from engine.py
 engine.train(model=model,
              train_dataloader=train_dataloader,
-             test_dataloader=valdataloader,
+             test_dataloader=val_dataloader,
              loss_fn=loss_fn,
              optimizer=optimizer,
              epochs=NUM_EPOCHS,
