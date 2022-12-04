@@ -8,7 +8,7 @@ import torch
 import torch.nn as nn
 from torch.optim import RMSprop
 from torch.optim.lr_scheduler import StepLR
-import data_setup, engine, model, utils
+import data_setup, engine, utils
 
 from torchvision import transforms
 from torchvision.models import mobilenet_v2, MobileNet_V2_Weights
