@@ -9,12 +9,7 @@ from PIL import Image
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 
 # 1. Take in a trained model, class names, image path, image size, a transform and target device
-def pred_and_plot_image(model: torch.nn.Module,
-                        image_path: str, 
-                        class_names: Dict[str],
-                        image_size: Tuple[int, int] = (224, 224),
-                        transform: torchvision.transforms = None,
-                        device: torch.device=device):
+def pred_and_plot_image(model, image_path, class_names, image_size, transform, device):
     
     
     # 2. Open image
