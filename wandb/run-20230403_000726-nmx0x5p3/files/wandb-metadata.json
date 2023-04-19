@@ -1,0 +1,50 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.10.9",
+    "heartbeatAt": "2023-04-02T16:07:27.976331",
+    "startedAt": "2023-04-02T16:07:26.395126",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "d:\\fdani\\Documents\\ACADS\\4th Year\\1st Semester\\EEE 196\\Code\\MobileNetV2_FSLModel\\train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/fdanalyssa/MobileNetV2_FSLModel.git",
+        "commit": "85a01767448ea318ead366c1bdaf7e656f9a0176"
+    },
+    "email": "danica.alyssa.fuensalida@eee.upd.edu.ph",
+    "root": "D:/fdani/Documents/ACADS/4th Year/1st Semester/EEE 196/Code/MobileNetV2_FSLModel",
+    "host": "DESKTOP-76KSAKK",
+    "username": "fdani",
+    "executable": "C:\\Users\\fdani\\anaconda3\\envs\\dl_course\\python.exe",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 1400.0,
+        "min": 0.0,
+        "max": 3000.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1400.0,
+            "min": 0.0,
+            "max": 3000.0
+        }
+    ],
+    "disk": {
+        "total": 931.5107383728027,
+        "used": 656.9953422546387
+    },
+    "gpu": "NVIDIA GeForce GTX 1650 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1650 Ti",
+            "memory_total": 4294967296
+        }
+    ],
+    "memory": {
+        "total": 15.372379302978516
+    }
+}

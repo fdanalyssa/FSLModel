@@ -1,0 +1,40 @@
+
+
+  5%|█████████▏                                                                                                                                                                             | 1/20 [41:15<13:03:50, 2475.30s/it]
+  5%|█████████▏                                                                                                                                                                             | 1/20 [58:41<18:35:02, 3521.18s/it]
+Traceback (most recent call last):
+  File "d:\fdani\Documents\ACADS\4th Year\1st Semester\EEE 196\Code\MobileNetV2_FSLModel\train.py", line 100, in <module>
+    main()
+  File "d:\fdani\Documents\ACADS\4th Year\1st Semester\EEE 196\Code\MobileNetV2_FSLModel\train.py", line 82, in main
+    engine.train(model=model,
+  File "d:\fdani\Documents\ACADS\4th Year\1st Semester\EEE 196\Code\MobileNetV2_FSLModel\engine.py", line 110, in train
+    train_loss, train_acc = train_step(model=model,
+  File "d:\fdani\Documents\ACADS\4th Year\1st Semester\EEE 196\Code\MobileNetV2_FSLModel\engine.py", line 22, in train_step
+    for batch, (X, y) in enumerate(dataloader):
+  File "C:\Users\fdani\anaconda3\envs\dl_course\lib\site-packages\torch\utils\data\dataloader.py", line 628, in __next__
+    data = self._next_data()
+  File "C:\Users\fdani\anaconda3\envs\dl_course\lib\site-packages\torch\utils\data\dataloader.py", line 1313, in _next_data
+    return self._process_data(data)
+  File "C:\Users\fdani\anaconda3\envs\dl_course\lib\site-packages\torch\utils\data\dataloader.py", line 1359, in _process_data
+    data.reraise()
+  File "C:\Users\fdani\anaconda3\envs\dl_course\lib\site-packages\torch\_utils.py", line 543, in reraise
+    raise exception
+MemoryError: Caught MemoryError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "C:\Users\fdani\anaconda3\envs\dl_course\lib\site-packages\torch\utils\data\_utils\worker.py", line 302, in _worker_loop
+    data = fetcher.fetch(index)
+  File "C:\Users\fdani\anaconda3\envs\dl_course\lib\site-packages\torch\utils\data\_utils\fetch.py", line 58, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\fdani\anaconda3\envs\dl_course\lib\site-packages\torch\utils\data\_utils\fetch.py", line 58, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\fdani\anaconda3\envs\dl_course\lib\site-packages\torchvision\datasets\folder.py", line 229, in __getitem__
+    sample = self.loader(path)
+  File "C:\Users\fdani\anaconda3\envs\dl_course\lib\site-packages\torchvision\datasets\folder.py", line 268, in default_loader
+    return pil_loader(path)
+  File "C:\Users\fdani\anaconda3\envs\dl_course\lib\site-packages\torchvision\datasets\folder.py", line 248, in pil_loader
+    return img.convert("RGB")
+  File "C:\Users\fdani\anaconda3\envs\dl_course\lib\site-packages\PIL\Image.py", line 949, in convert
+    return self.copy()
+  File "C:\Users\fdani\anaconda3\envs\dl_course\lib\site-packages\PIL\Image.py", line 1206, in copy
+    return self._new(self.im.copy())
+MemoryError

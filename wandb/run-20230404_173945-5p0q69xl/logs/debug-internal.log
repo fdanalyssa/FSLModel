@@ -1,0 +1,267 @@
+2023-04-04 17:39:45,588 INFO    StreamThr :7060 [internal.py:wandb_internal():87] W&B internal server running at pid: 7060, started at: 2023-04-04 17:39:45.587448
+2023-04-04 17:39:45,592 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status
+2023-04-04 17:39:45,617 INFO    WriterThread:7060 [datastore.py:open_for_write():85] open: D:\fdani\Documents\ACADS\4th Year\1st Semester\EEE 196\Code\MobileNetV2_FSLModel\wandb\run-20230404_173945-5p0q69xl\run-5p0q69xl.wandb
+2023-04-04 17:39:45,620 DEBUG   SenderThread:7060 [sender.py:send():336] send: header
+2023-04-04 17:39:45,773 DEBUG   SenderThread:7060 [sender.py:send():336] send: run
+2023-04-04 17:39:46,620 INFO    SenderThread:7060 [dir_watcher.py:__init__():219] watching files in: D:\fdani\Documents\ACADS\4th Year\1st Semester\EEE 196\Code\MobileNetV2_FSLModel\wandb\run-20230404_173945-5p0q69xl\files
+2023-04-04 17:39:46,621 INFO    SenderThread:7060 [sender.py:_start_run_threads():1078] run started: 5p0q69xl with start time 1680601185.597458
+2023-04-04 17:39:46,621 DEBUG   SenderThread:7060 [sender.py:send_request():363] send_request: summary_record
+2023-04-04 17:39:46,622 INFO    SenderThread:7060 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-04 17:39:46,636 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: check_version
+2023-04-04 17:39:46,637 DEBUG   SenderThread:7060 [sender.py:send_request():363] send_request: check_version
+2023-04-04 17:39:46,832 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: run_start
+2023-04-04 17:39:46,886 DEBUG   HandlerThread:7060 [system_info.py:__init__():31] System info init
+2023-04-04 17:39:46,887 DEBUG   HandlerThread:7060 [system_info.py:__init__():46] System info init done
+2023-04-04 17:39:46,887 INFO    HandlerThread:7060 [system_monitor.py:start():183] Starting system monitor
+2023-04-04 17:39:46,888 INFO    SystemMonitor:7060 [system_monitor.py:_start():147] Starting system asset monitoring threads
+2023-04-04 17:39:46,888 INFO    HandlerThread:7060 [system_monitor.py:probe():204] Collecting system info
+2023-04-04 17:39:46,899 INFO    SystemMonitor:7060 [interfaces.py:start():187] Started cpu monitoring
+2023-04-04 17:39:46,901 INFO    SystemMonitor:7060 [interfaces.py:start():187] Started disk monitoring
+2023-04-04 17:39:46,903 INFO    SystemMonitor:7060 [interfaces.py:start():187] Started gpu monitoring
+2023-04-04 17:39:46,920 INFO    SystemMonitor:7060 [interfaces.py:start():187] Started memory monitoring
+2023-04-04 17:39:46,941 INFO    SystemMonitor:7060 [interfaces.py:start():187] Started network monitoring
+2023-04-04 17:39:46,949 DEBUG   HandlerThread:7060 [system_info.py:probe():195] Probing system
+2023-04-04 17:39:46,971 DEBUG   HandlerThread:7060 [system_info.py:_probe_git():180] Probing git
+2023-04-04 17:39:46,972 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:39:47,212 DEBUG   HandlerThread:7060 [system_info.py:_probe_git():188] Probing git done
+2023-04-04 17:39:47,213 DEBUG   HandlerThread:7060 [system_info.py:probe():240] Probing system done
+2023-04-04 17:39:47,213 DEBUG   HandlerThread:7060 [system_monitor.py:probe():213] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.10.9', 'heartbeatAt': '2023-04-04T09:39:46.966269', 'startedAt': '2023-04-04T09:39:45.537470', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'd:\\fdani\\Documents\\ACADS\\4th Year\\1st Semester\\EEE 196\\Code\\MobileNetV2_FSLModel\\train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/fdanalyssa/MobileNetV2_FSLModel.git', 'commit': '85a01767448ea318ead366c1bdaf7e656f9a0176'}, 'email': 'danica.alyssa.fuensalida@eee.upd.edu.ph', 'root': 'D:/fdani/Documents/ACADS/4th Year/1st Semester/EEE 196/Code/MobileNetV2_FSLModel', 'host': 'DESKTOP-76KSAKK', 'username': 'fdani', 'executable': 'C:\\Users\\fdani\\anaconda3\\envs\\dl_course\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 1400.0, 'min': 0.0, 'max': 3000.0}, 'cpu_freq_per_core': [{'current': 1400.0, 'min': 0.0, 'max': 3000.0}], 'disk': {'total': 931.5107383728027, 'used': 684.5477104187012}, 'gpu': 'NVIDIA GeForce GTX 1650 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX 1650 Ti', 'memory_total': 4294967296}], 'memory': {'total': 15.372379302978516}}
+2023-04-04 17:39:47,213 INFO    HandlerThread:7060 [system_monitor.py:probe():214] Finished collecting system info
+2023-04-04 17:39:47,213 INFO    HandlerThread:7060 [system_monitor.py:probe():217] Publishing system info
+2023-04-04 17:39:47,214 DEBUG   HandlerThread:7060 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-04-04 17:39:47,215 DEBUG   HandlerThread:7060 [system_info.py:_save_pip():67] Saving pip packages done
+2023-04-04 17:39:47,216 DEBUG   HandlerThread:7060 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-04-04 17:39:47,638 INFO    Thread-17 :7060 [dir_watcher.py:_on_file_created():278] file/dir created: D:\fdani\Documents\ACADS\4th Year\1st Semester\EEE 196\Code\MobileNetV2_FSLModel\wandb\run-20230404_173945-5p0q69xl\files\conda-environment.yaml
+2023-04-04 17:39:47,639 INFO    Thread-17 :7060 [dir_watcher.py:_on_file_created():278] file/dir created: D:\fdani\Documents\ACADS\4th Year\1st Semester\EEE 196\Code\MobileNetV2_FSLModel\wandb\run-20230404_173945-5p0q69xl\files\requirements.txt
+2023-04-04 17:39:47,640 INFO    Thread-17 :7060 [dir_watcher.py:_on_file_created():278] file/dir created: D:\fdani\Documents\ACADS\4th Year\1st Semester\EEE 196\Code\MobileNetV2_FSLModel\wandb\run-20230404_173945-5p0q69xl\files\wandb-summary.json
+2023-04-04 17:39:49,015 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:39:51,058 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:39:53,107 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:39:55,139 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:39:57,187 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:39:59,233 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:40:01,270 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:40:01,570 DEBUG   HandlerThread:7060 [system_info.py:_save_conda():86] Saving conda packages done
+2023-04-04 17:40:01,572 INFO    HandlerThread:7060 [system_monitor.py:probe():219] Finished publishing system info
+2023-04-04 17:40:01,584 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:40:01,584 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:40:01,585 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:40:01,585 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:40:01,585 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:40:01,587 DEBUG   SenderThread:7060 [sender.py:send():336] send: files
+2023-04-04 17:40:01,587 INFO    SenderThread:7060 [sender.py:_save_file():1332] saving file wandb-metadata.json with policy now
+2023-04-04 17:40:01,615 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-04 17:40:01,618 DEBUG   SenderThread:7060 [sender.py:send_request():363] send_request: stop_status
+2023-04-04 17:40:01,769 INFO    Thread-17 :7060 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\fdani\Documents\ACADS\4th Year\1st Semester\EEE 196\Code\MobileNetV2_FSLModel\wandb\run-20230404_173945-5p0q69xl\files\conda-environment.yaml
+2023-04-04 17:40:01,770 INFO    Thread-17 :7060 [dir_watcher.py:_on_file_created():278] file/dir created: D:\fdani\Documents\ACADS\4th Year\1st Semester\EEE 196\Code\MobileNetV2_FSLModel\wandb\run-20230404_173945-5p0q69xl\files\wandb-metadata.json
+2023-04-04 17:40:02,613 INFO    wandb-upload_0:7060 [upload_job.py:push():138] Uploaded file C:\Users\fdani\AppData\Local\Temp\tmppr_9csycwandb\qwtfr84v-wandb-metadata.json
+2023-04-04 17:40:03,307 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:40:03,650 DEBUG   SenderThread:7060 [sender.py:send():336] send: telemetry
+2023-04-04 17:40:03,779 INFO    Thread-17 :7060 [dir_watcher.py:_on_file_created():278] file/dir created: D:\fdani\Documents\ACADS\4th Year\1st Semester\EEE 196\Code\MobileNetV2_FSLModel\wandb\run-20230404_173945-5p0q69xl\files\output.log
+2023-04-04 17:40:05,352 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:40:05,805 INFO    Thread-17 :7060 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\fdani\Documents\ACADS\4th Year\1st Semester\EEE 196\Code\MobileNetV2_FSLModel\wandb\run-20230404_173945-5p0q69xl\files\output.log
+2023-04-04 17:40:06,695 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:40:07,388 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:40:09,431 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:40:11,475 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:40:11,745 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:40:13,517 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:40:15,561 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:40:16,610 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:40:16,610 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:40:16,794 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:40:17,717 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:40:17,921 INFO    Thread-17 :7060 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\fdani\Documents\ACADS\4th Year\1st Semester\EEE 196\Code\MobileNetV2_FSLModel\wandb\run-20230404_173945-5p0q69xl\files\config.yaml
+2023-04-04 17:40:19,741 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:40:21,671 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:40:21,765 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:40:22,304 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:40:23,788 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:40:25,835 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:40:26,672 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:40:27,371 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:40:27,858 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:40:29,886 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:40:31,705 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:40:31,908 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:40:32,426 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:40:34,016 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:40:36,035 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:40:36,744 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:40:37,462 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:40:38,053 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:40:40,068 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:40:41,799 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:40:42,098 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:40:42,502 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:40:44,116 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:40:46,140 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:40:46,851 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:40:46,976 DEBUG   SystemMonitor:7060 [system_monitor.py:_start():161] Starting system metrics aggregation loop
+2023-04-04 17:40:46,978 DEBUG   SenderThread:7060 [sender.py:send():336] send: stats
+2023-04-04 17:40:47,985 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:40:48,269 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:40:50,293 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:40:51,905 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:40:52,318 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:40:53,038 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:40:54,340 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:40:56,357 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:40:56,962 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:40:58,091 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:40:58,381 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:41:00,397 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:41:01,990 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:41:02,421 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:41:03,122 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:41:04,441 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:41:06,472 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:41:07,033 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:41:08,166 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:41:08,511 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:41:10,539 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:41:12,081 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:41:12,561 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:41:13,215 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:41:14,597 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:41:16,645 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:41:16,991 DEBUG   SenderThread:7060 [sender.py:send():336] send: stats
+2023-04-04 17:41:17,113 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:41:18,787 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:41:19,016 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:41:20,809 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:41:22,130 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:41:22,831 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:41:24,047 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:41:24,856 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:41:26,876 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:41:27,173 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:41:28,897 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:41:29,085 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:41:30,933 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:41:32,221 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:41:32,958 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:41:34,135 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:41:34,984 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:41:37,009 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:41:37,264 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:41:39,045 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:41:39,152 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:41:41,090 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:41:42,313 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:41:43,130 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:41:44,191 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:41:45,177 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:41:47,007 DEBUG   SenderThread:7060 [sender.py:send():336] send: stats
+2023-04-04 17:41:47,232 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:41:47,363 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:41:49,391 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:41:50,029 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:41:51,410 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:41:52,415 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:41:53,425 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:41:55,075 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:41:55,443 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:41:57,455 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:41:57,474 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:41:59,493 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:42:00,121 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:42:01,515 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:42:02,491 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:42:03,546 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:42:05,181 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:42:05,584 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:42:07,542 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:42:07,619 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:42:09,644 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:42:10,220 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:42:11,669 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:42:12,603 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:42:13,706 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:42:15,281 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:42:15,747 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:42:17,021 DEBUG   SenderThread:7060 [sender.py:send():336] send: stats
+2023-04-04 17:42:17,640 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:42:17,641 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:42:17,781 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:42:19,938 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:42:21,043 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:42:21,951 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:42:22,684 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:42:23,977 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:42:26,005 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:42:26,083 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:42:27,732 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:42:28,024 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:42:30,049 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:42:31,140 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:42:32,073 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:42:32,768 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:42:34,091 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:42:36,135 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:42:36,212 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:42:37,807 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:42:38,162 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:42:40,199 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:42:41,266 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:42:42,233 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:42:42,871 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:42:44,270 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:42:46,309 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:42:46,313 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:42:47,033 DEBUG   SenderThread:7060 [sender.py:send():336] send: stats
+2023-04-04 17:42:47,937 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:42:48,338 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:42:50,492 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:42:52,087 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:42:52,515 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:42:52,987 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:42:54,545 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:42:56,449 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-04 17:42:56,450 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-04 17:42:56,451 DEBUG   SenderThread:7060 [sender.py:send():336] send: history
+2023-04-04 17:42:56,451 DEBUG   SenderThread:7060 [sender.py:send_request():363] send_request: summary_record
+2023-04-04 17:42:56,452 INFO    SenderThread:7060 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-04 17:42:56,452 DEBUG   SenderThread:7060 [sender.py:send():336] send: history
+2023-04-04 17:42:56,453 DEBUG   SenderThread:7060 [sender.py:send_request():363] send_request: summary_record
+2023-04-04 17:42:56,453 INFO    SenderThread:7060 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-04-04 17:42:56,488 INFO    Thread-17 :7060 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\fdani\Documents\ACADS\4th Year\1st Semester\EEE 196\Code\MobileNetV2_FSLModel\wandb\run-20230404_173945-5p0q69xl\files\wandb-summary.json
+2023-04-04 17:42:56,563 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:42:57,458 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:42:58,037 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:42:58,529 INFO    Thread-17 :7060 [dir_watcher.py:_on_file_modified():295] file/dir modified: D:\fdani\Documents\ACADS\4th Year\1st Semester\EEE 196\Code\MobileNetV2_FSLModel\wandb\run-20230404_173945-5p0q69xl\files\output.log
+2023-04-04 17:42:58,577 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:43:00,603 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:43:02,491 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:43:02,635 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:43:03,100 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:43:04,699 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:43:06,733 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:43:07,571 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:43:08,152 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:43:08,771 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:43:10,806 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:43:12,602 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:43:12,852 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:43:13,210 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:43:14,888 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:43:16,926 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:43:17,042 DEBUG   SenderThread:7060 [sender.py:send():336] send: stats
+2023-04-04 17:43:18,052 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:43:18,274 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:43:18,969 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:43:21,154 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:43:23,102 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:43:23,180 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:43:23,319 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:43:25,207 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:43:27,237 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:43:28,147 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:43:28,351 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:43:29,255 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:43:31,273 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:43:33,196 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: status_report
+2023-04-04 17:43:33,296 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:43:33,413 DEBUG   HandlerThread:7060 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-04 17:43:35,317 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-04-04 17:43:37,337 ERROR   gpu       :7060 [interfaces.py:monitor():141] Failed to sample metric: Not Supported

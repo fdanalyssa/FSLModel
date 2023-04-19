@@ -2,10 +2,7 @@
 import torch
 from pathlib import Path
 
-def save_model(model: torch.nn.Module,
-               target_dir: str,
-               model_name: str):
-
+def save_model(model, target_dir, model_name):
 
   # Create target directory
   target_dir_path = Path(target_dir)
@@ -20,3 +17,14 @@ def save_model(model: torch.nn.Module,
   print(f"[INFO] Saving model to: {model_save_path}")
   torch.save(obj=model.state_dict(),
              f=model_save_path)
+  
+def load_model(model, model_save_path):
+
+  # Load model state_dict()
+  print(f"[INFO] Loading model from: {model_save_path}")
+  model.load_state_dict(torch.load(f=model_save_path))
+
+  return model
+
+
+

@@ -1,0 +1,9 @@
+  0%|                                                                                                                                        | 0/20 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "d:\fdani\Documents\ACADS\4th Year\1st Semester\EEE 196\Code\MobileNetV2_FSLModel\train.py", line 108, in <module>
+    main()
+  File "d:\fdani\Documents\ACADS\4th Year\1st Semester\EEE 196\Code\MobileNetV2_FSLModel\train.py", line 89, in main
+    engine.train(model=model,
+  File "d:\fdani\Documents\ACADS\4th Year\1st Semester\EEE 196\Code\MobileNetV2_FSLModel\engine.py", line 121, in train
+    scheduler=scheduler,
+NameError: name 'scheduler' is not defined

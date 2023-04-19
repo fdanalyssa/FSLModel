@@ -1,0 +1,40 @@
+
+  0%|                                                                                                                                        | 0/20 [00:45<?, ?it/s]
+Traceback (most recent call last):
+  File "d:\fdani\Documents\ACADS\4th Year\1st Semester\EEE 196\Code\MobileNetV2_FSLModel\train.py", line 114, in <module>
+    main()
+  File "d:\fdani\Documents\ACADS\4th Year\1st Semester\EEE 196\Code\MobileNetV2_FSLModel\train.py", line 91, in main
+    engine.train(model=model,
+  File "d:\fdani\Documents\ACADS\4th Year\1st Semester\EEE 196\Code\MobileNetV2_FSLModel\engine.py", line 113, in train
+    train_loss, train_acc = train_step(model=model,
+  File "d:\fdani\Documents\ACADS\4th Year\1st Semester\EEE 196\Code\MobileNetV2_FSLModel\engine.py", line 27, in train_step
+    y_pred = model(X)
+  File "C:\Users\fdani\anaconda3\envs\dl_course\lib\site-packages\torch\nn\modules\module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\fdani\anaconda3\envs\dl_course\lib\site-packages\torchvision\models\mobilenetv2.py", line 174, in forward
+    return self._forward_impl(x)
+  File "C:\Users\fdani\anaconda3\envs\dl_course\lib\site-packages\torchvision\models\mobilenetv2.py", line 166, in _forward_impl
+    x = self.features(x)
+  File "C:\Users\fdani\anaconda3\envs\dl_course\lib\site-packages\torch\nn\modules\module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\fdani\anaconda3\envs\dl_course\lib\site-packages\torch\nn\modules\container.py", line 204, in forward
+    input = module(input)
+  File "C:\Users\fdani\anaconda3\envs\dl_course\lib\site-packages\torch\nn\modules\module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\fdani\anaconda3\envs\dl_course\lib\site-packages\torchvision\models\mobilenetv2.py", line 62, in forward
+    return x + self.conv(x)
+  File "C:\Users\fdani\anaconda3\envs\dl_course\lib\site-packages\torch\nn\modules\module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\fdani\anaconda3\envs\dl_course\lib\site-packages\torch\nn\modules\container.py", line 204, in forward
+    input = module(input)
+  File "C:\Users\fdani\anaconda3\envs\dl_course\lib\site-packages\torch\nn\modules\module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\fdani\anaconda3\envs\dl_course\lib\site-packages\torch\nn\modules\container.py", line 204, in forward
+    input = module(input)
+  File "C:\Users\fdani\anaconda3\envs\dl_course\lib\site-packages\torch\nn\modules\module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\fdani\anaconda3\envs\dl_course\lib\site-packages\torch\nn\modules\activation.py", line 234, in forward
+    return F.hardtanh(input, self.min_val, self.max_val, self.inplace)
+  File "C:\Users\fdani\anaconda3\envs\dl_course\lib\site-packages\torch\nn\functional.py", line 1506, in hardtanh
+    result = torch._C._nn.hardtanh_(input, min_val, max_val)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 38.00 MiB (GPU 0; 4.00 GiB total capacity; 3.34 GiB already allocated; 0 bytes free; 3.42 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
