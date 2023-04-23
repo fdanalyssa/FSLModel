@@ -19,17 +19,17 @@ def script_model(model):
     traced_model = torch.jit.trace(model, input_data)
 
     # Save the TorchScript model to a file
-    traced_model.save('saved_models/android_converted/traced_FILOSign_Adam_0.000325_0.2__50e_mobilenetv2.pt')
+    traced_model.save('saved_models/android_converted/traced_FILOSign_Adam_0.000325_0.2_50e_torch13_androidtest_state.pt')
 
     traced_script_module_optimized = optimize_for_mobile(traced_model)
 
-    traced_script_module_optimized._save_for_lite_interpreter("saved_models/android_converted/androidTest_FILOSign_Adam_lr000325_d2_50e_model.ptl")
+    traced_script_module_optimized._save_for_lite_interpreter("saved_models/android_converted/androidTest_FILOSign_Adam_0.000325_0.2_50e_torch13convtorch09_androidtest_state.ptl")
 
 
 def main():
 
     # Load the pretrained MobileNetV2 model
-    PATH = "saved_models\FILOSign_Adam_0.000325_0.2_50e_androidtest.pth"
+    PATH = "saved_models/FILOSign_Adam_0.000325_0.2_50e_torch13_androidtest_state.pth"
 
     model = torchvision.models.mobilenet_v2()
 

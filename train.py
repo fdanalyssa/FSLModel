@@ -8,6 +8,7 @@ import torch.optim
 import data_setup, engine
 
 from torchvision.models import mobilenet_v2
+from torchvision.models import MobileNet_V2_Weights
 
 from classnames import CLASS_NAMES
 
@@ -15,17 +16,19 @@ from classnames import CLASS_NAMES
 
 def main():
     # Setup hyperparameters
-    NUM_EPOCHS = 10
+    NUM_EPOCHS = 50
     BATCH_SIZE = 64
-    LEARNING_RATE = 0.0001
+    LEARNING_RATE = 0.000325
     NUM_WORKERS = 4
     ARCHITECTURE = "CNN_MobileNetV2"
-    DATASET = "FSL_Resized_400"
+    DATASET = "FSL_Resized_"
     OPTIMIZER_NAME = "RMS"
+    PATH_WHOLE_MODEL = "saved_models/whole_model/FILOSign_RMS_0.000325_0.2_50e_torch13_androidtest.pth"
+    PATH_STATE_MODEL = "saved_models/FILOSign_RMS_0.000325_0.2_50e_torch13_androidtest_state.pth"
 
     # Setup directories
-    train_dir = "FSL_alphabet_400/train"
-    val_dir = "FSL_alphabet_400/val"
+    train_dir = "FSL_alphabet/train"
+    val_dir = "FSL_alphabet/val"
 
     # Setup target device
     device = "cuda:0"
@@ -46,7 +49,7 @@ def main():
                                                     pin_memory=True)
 
     #Auto-Transform
-  #  weights = MobileNet_V2_Weights.IMAGENET1K_V1
+    weights = MobileNet_V2_Weights.IMAGENET1K_V1
 
  #   torch.backends.quantized.engine = 'fbgemm'
     
@@ -55,8 +58,8 @@ def main():
 
 
     #Activates pretrained weights of model
-  #  model = mobilenet_v2(weights=weights).to(device='cuda:0')
-    model = mobilenet_v2(pretrained=True).to(device='cuda:0')
+    model = mobilenet_v2(weights=weights).to(device='cuda:0')
+  #  model = mobilenet_v2(pretrained=True).to(device='cuda:0')
     
 
    # model = quantization.mobilenet_v2(weights=quantized_weights, quantize=True).to(device='cuda:0')
@@ -83,7 +86,7 @@ def main():
     loss_fn = nn.CrossEntropyLoss()
 
     optimizer = torch.optim.RMSprop(model.parameters(), lr=LEARNING_RATE, momentum=0.9, weight_decay=1e-5)
-   # optimizer = torch.optim.Adam(model.parameters(), lr=LEARNING_RATE, weight_decay=1e-5)
+  #  optimizer = torch.optim.Adam(model.parameters(), lr=LEARNING_RATE, weight_decay=1e-5)
 
     # learning rate scheduler
     #scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=5, gamma=0.1)
@@ -100,8 +103,12 @@ def main():
                 architecture=ARCHITECTURE,
                 dataset=DATASET,
                 opt_name=OPTIMIZER_NAME,
-                model_path="saved_models/FILOSign_RMS_0.0001_0.2_20e_400px_androidtest.pth"
+                model_path= PATH_STATE_MODEL
                 )    
+
+    #saving entire model
+    print(f"[INFO] Saving whole model to: {PATH_WHOLE_MODEL}")
+    torch.save(model, PATH_WHOLE_MODEL)
 
 
 if __name__ == "__main__":
