@@ -3,3 +3,7 @@ torchvision>=0.9.1
 tqdm>=4.56.0
 wandb
 matplotlib
+split_folders
+seaborn
+scikit-learn
+torchinfo
